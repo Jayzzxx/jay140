@@ -1,0 +1,1101 @@
+<!DOCTYPE html>
+<html>
+  <meta charset="utf-8" />
+  <head>
+    <title>index</title>
+	<style>
+	body {
+    padding:0;  /*去除内边距*/
+    border:0;   /*去除边框*/
+    margin:0;   /*去除外边距*/
+}
+	.qq{
+		width:100%;
+		height: 1200px;
+		background-color: #f8f7f6;
+	}
+	.float{
+		width:100%;
+		height: 170px;
+		border-bottom: 1px solid #ff4d04;
+		background-color: #ffffff;
+		overflow: hidden;
+	
+	}
+	.wee{
+		width: 100%;
+		height: 129.99px;
+		z-index:99;
+		background-color: white;
+	}
+
+	.we{
+		width: 1180px;
+		height: 129.99px;
+		margin: 0 auto;
+		background-color: white;
+	}
+	.ww{
+		width: 1180px;
+		height: 19px;
+		margin: 0 auto;
+
+	}
+	.xiaotu{
+		padding-left: 19px;
+
+	}
+	.zi{
+		margin-left: 12px;
+		font-size: 11px;
+		color: grey;
+		text-decoration: none;
+	}
+	.zia{
+		
+		font-size: 11px;
+		color: grey;
+		text-decoration: none;
+	}
+	.bang{
+		width: 1180px;
+		height: 110px;
+		margin:0 auto; 
+	}
+	.task{
+		width: 420px;
+		height: 30px;
+		margin-top: 40px;
+		margin-left: 100px;
+		float: left;
+		border:3px solid #fe6c00;
+		color: grey;
+		box-decoration-break: none;
+	}
+	.dada{
+		width: 79px;
+		height: 38px;
+		background-color: #fe6c00;
+		margin-top: 40px;
+		border:3px solid #fe6c00;
+		color: white;
+		float: left;
+
+	}
+	.feijin{
+		width: 85px;
+		height: 40px;
+		margin-top: 40px;
+		margin-left: 70px;	
+		float: left;
+		border: 1px solid #e6e5e2;	
+	}
+	.feijin1{
+		width: 85px;
+		height: 40px;
+		margin-top: 40px;
+		border: 1px solid #e6e5e2;
+		float: left;	
+
+				
+	}
+	.xifa{
+		height: 17px;
+		width: 70px;
+		border:1px solid #e6e5e2;
+		margin-left: 200px;
+
+	}
+	.hov{
+		width: 1180px;
+		height: 40px;
+		margin:0 auto;
+	}
+	.hov div:hover{
+		background-color: #ff0000;
+	}
+	.hov div li a:hover{
+		color: white;
+	}
+	
+	.hou{
+		height: 40px;
+		text-align: center;
+		float: left;
+	}
+	.aaa{font-size: 17px;
+		text-decoration: none;
+		padding-top: 12px;
+		color: black;
+	}
+	.xiam{
+		width: 1180px;
+		height: 1020px;
+		margin: 0 auto; 
+
+	}
+	.pang{
+		width: 170px;
+		height: 548px;
+		float: left;
+		background-color: #ffffff;
+	}
+	.pang2{
+		width: 170px;
+		height: 422px;
+		float: left;
+		border-bottom: 1px solid #ff4d04;
+	}
+	.pang3{
+		width: 25px;
+		height: 422px;
+		float: left;
+		background-color: #4c4c4a;
+	}
+	.pang4{
+		width: 145px;
+		height: 422px;
+		float: left;
+	}
+	.pang5{
+		font-size: 12px;
+		padding-left: 9px;
+		text-decoration: none;
+		color: black;
+		float: left;
+		padding-top: 15px;
+	}
+	.pang6{
+		font-size: 12px;
+		padding-left: 14px;
+		text-decoration: none;
+		color: black;
+		float: left;
+		padding-top: 15px;
+	}
+	.lun{
+		width: 800px;
+		height: 548px;
+		float: left;
+	}
+	.box{
+		width: 800px;
+		height: 361px;
+		overflow: hidden;
+		position: relative;
+		border-bottom: 3px solid #fe6c00;
+	}
+	.slider{
+		width: 6400px;
+		position: absolute;
+		left: -800px;
+	}
+	.slide{
+		width: 800px;
+		overflow: hidden;
+		float: left;
+	}
+	.tup{
+		width: 200px;
+		height: 183px;
+		float: left;
+	}
+	.box>span{
+	display: block;
+	width: 30px;
+	height: 50px;
+	text-align: center;
+	cursor: pointer;
+	color: #fff;
+	top: 175px;
+	line-height: 50px;
+	background: rgb(255,0,0);
+	font-size: 30px;
+	position: absolute;
+	/* display: none; */
+	opacity: 0;
+}
+#left{
+	left: 30px;
+}
+#right{
+	right: 30px;
+}
+.nav{
+	position: absolute;
+	left: 220px;
+	bottom: 20px;
+}
+.nav>li{
+	float: left;
+	width: 20px;
+	height: 20px;
+	background: #ccc;
+	cursor: pointer;
+	list-style-type: none;
+	margin: 0 5px;
+	border-radius: 50%;
+}
+.nav .active{
+	background: red;
+}
+.gundong{
+	width: 210px;
+	height: 548px;
+	background-color:white ;
+	float: left;
+}
+.kuai{
+	width: 210px;
+	height: 45px;
+	border-bottom: 1px solid #ebeae7;
+}
+.nana{
+	width: 210px;
+	height: 322px;
+	border-left: 1px solid #fe6c00;
+	border-bottom: 1px solid #ebeae7;
+	overflow: hidden;
+}
+#nana span{
+			position:relative;
+			left:500px;
+			white-space: nowrap;
+			display: block;
+			height: 20px;
+		}
+.ooo{
+	width: 208px;
+	height: 175px;
+	position:relative;
+}
+
+
+
+.float1{
+	width: 130px;
+	height: 105px;
+	float: left;
+	top: 82px;
+	right: -82px;
+	position: fixed;
+	z-index: 6;
+}
+.float1>img{
+	float: left;
+}
+.sy1{
+	width: 130px;
+	height: 60px;
+}
+.sy2{
+	width: 130px;
+	height: 45px;
+}
+.float2{
+	width: 130px;
+	height: 140px;
+	float: left;
+	top: 191px;
+	right: -82px;
+	position: fixed;
+}
+.float2>img{
+	float: left;
+}
+.sy3{
+	width: 60px;
+	height: 140px;
+	float: left;
+}
+.float21{
+	width: 70px;
+	height: 140px;
+	float: left;
+	background-color: #ff9260;
+}
+.right211{
+	float: left;
+	font-size: 13px;
+	margin-left: 10px;
+	margin-top: 40px;
+}
+.float212{
+	width: 40px;
+	height: 20px;
+	float: left;
+	text-align: center;
+	font-size: 13px;
+	color: white;
+	border: 1px solid white;
+	border-radius: 2px;
+	margin-left: 10px;
+	margin-top: 20px;
+}
+.float3{
+	width: 130px;
+	height: 150px;
+	float: left;
+	top: 336px;
+	right: -82px;
+	position: fixed;
+}
+.float3>img{
+	float: left;
+}
+.float3t1{
+	width:130px;
+	height:50px;
+}
+.float31{
+	width: 130px;
+	height: 100px;
+	float: left;
+	background-color: #ff9260;
+}
+.float31>img{
+	width: 25px
+	height: 25px;
+	float: left;
+	margin-top: 36px;
+	margin-left: 12px;
+}
+.float4{
+	width: 130px;
+	height: 140px;
+	top: 491px;
+	right: -82px;
+	position: fixed;
+}
+.float4>img{
+	width: 130px;
+	height: 140px;
+	float: left;
+}
+.dibu{
+	width: 1180px;
+	height: 210px;
+	float: left;
+	border-bottom: solid 1px #ebeae8;  
+}
+.liebiao{
+	width: 1000px;
+	height: 180px;
+	/* border-bottom: solid 1px #ebeae8;  */
+}
+.w1{
+	margin-left: 200px;
+	margin-top: -170px;
+	line-height: 30px;
+	list-style: none;
+}
+.w2{
+	margin-left: 343px;
+	margin-top: -165px;
+	line-height: 30px;
+	list-style: none;
+}
+.w3{
+	margin-left: 480px;
+	margin-top: -135px;
+	line-height: 30px;
+	list-style: none;
+}
+.w4{
+	margin-left: 620px;
+	margin-top: -165px;
+	line-height: 30px;
+	list-style: none;
+}
+.w5{
+	margin-left: 760px;
+	margin-top: -137px;
+	line-height: 30px;
+	list-style: none;
+}
+.w6{
+	margin-left: 890px;
+	margin-top: -135px;
+	line-height: 30px;
+	list-style: none;
+}
+.plo3{
+	font-size: 15px;
+
+}
+.plo3 a{
+	text-decoration: none;
+	color:black;
+}
+.plo2 a{
+	text-decoration: none;
+	color: #666560;
+}
+.plo2{
+	font-size: 11px;
+	
+}
+.jij{
+	margin-left: 1030px;
+	margin-top: -180px;
+	/* width: 180px;
+	border-bottom: solid 1px #ebeae8;  */
+}
+.weibu{
+	
+	width: 1180px;
+	height: 200px;
+	float: left;
+}
+.uuu{
+	list-style:none;
+}
+.xia1{
+	margin-top: 18px;
+	margin-left: 256px;
+	float: left;
+}
+.xia2{
+	margin-left: 13px;
+	margin-top: 18px;
+	float: left;
+}
+.xia1 a{
+	text-decoration: none;
+	font-size: 11px;
+	color: #666560;
+}
+.xia2 a{
+	text-decoration: none;
+	font-size: 11px;
+	color: #666560;
+}
+.xia3{
+	margin-left: 13px;
+	margin-top: 21px;
+	font-size: 11px;
+	float: left;
+}
+.luow{
+	margin-top: 10px;
+	width: 1180px;
+	height: 38px;
+}
+.serio{
+	width: 1180px;
+	margin-top: 30px;
+	text-align: center;
+}
+.leu{
+	list-style: none;
+	/* margin-top: 30px; */
+	line-height: 25px;
+}
+.leu li{
+	font-size: 11px;
+	color: #9a9791;
+	text-align: center;
+}
+.pioc{
+	width: 1180px;
+}
+.q1{
+	margin-left: 200px;
+	margin-top: 40px;
+	float: left;
+	/* margin-bottom: 4px; */
+}
+.q2{
+	float: left;
+	margin-top: 40px;
+}
+
+
+
+	
+	</style>
+  </head>
+  <body>
+  	<div class="qq">
+  		<div class="float" id="ww">
+  			<div class="wee" id="www" style="position: static;">
+  				<div class="we" id="wwr">
+  				<div class="ww">
+  				<a href="#" style="margin-left: 0px;color: grey;text-decoration: none;font-size: 12px">帮5买，享帮帮</a>
+  				<a class="xiaotu" style="width:19px; height:19px; background: url(./img/common_min.png) 0 -31px;margin-left: 248px;" href="#"></a>
+  				<a class="xiaotu" style="width:19px; height:19px; background: url(./img/common_min.png) 0 -53px;margin-left: 19px;" href="#"></a>
+  				<a class="xiaotu" style="width:19px; height:19px; background: url(./img/common_min.png) 0 -75px;margin-left: 19px;" href="#"></a>
+  				<a href="" class="zi">登录</a>
+  				<a href="" class="zi">注册</a>
+  				<a href="" class="zi">登录</a>
+  				<a class="xiaotu" style="width:19px; height:19px; background: url(./img/common_min.png) 0 -113px;margin-left: 19px;" href="#"></a>
+  				<a href="" class="zia">消息</a>
+  				<a class="xiaotu" style=" background: url(./img/dingdan.jpg)no-repeat;margin-left: 18px;" href=""></a>
+  				<a href="" class="zia">我的订单</a>
+  				<a href="" class="zi">我的收藏</a>
+  				<a href="" class="zi">绑钻兑换</a>
+  				<a class="xiaotu" style="width:12px; height:10px; background: url(./img/tp-my-phone.png)no-repeat;margin-left: 18px;" href="#"></a>
+  				<a href="" class="zia">手机版</a>
+  				<a href="" class="zi">帮5淘</a>
+  				<a href="" class="zi">客户服务</a>
+  				<a class="xiaotu" style="width:19px; height:19px; background: url(./img/gouwuche.jpg)no-repeat;margin-left: 18px" href="#"></a>
+  				<a href="" class="zia">购物车</a>
+  				<a href="" style="font-size: 11px;color: orange;text-decoration: none;padding-left: 3px;">0</a>
+  			</div>
+  			<div class="bang" id="box1">
+  				<img src="./img/logo_03.jpg" alt="" style="margin-top: 20px;float: left">
+  				<input type="text" class="task" value="输入商品网址或关键词，直通全网，快速帮5购！">
+  				<button class="dada">搜全网</button>
+  				<div class="feijin">
+  					<a class="xiaotu" style="width:19px; height:19px; background: url(./img/common_min.png) 0 -95px;margin-left: 25px;" href="#"></a>
+  					<a style="font-size: 12px;color: grey;text-align: center;float: left">400-085-0505</a>
+  				</div>
+  				<div class="feijin1">
+  					<a class="xiaotu" style="width:19px; height:19px; background: url(./img/common_min.png) 0 -113px;margin-left: 25px;" href="#"></a>
+  					<a style="font-size: 12px;color: grey;text-align: center;float: left">mc@b5m.com</a>
+  				</div>
+  				<div class="feijin1" style="background-color: #ff4d04">
+  					<img src="./img/wenhao.jpg" alt="" style="margin-top: 13px;margin-left: 5px;float: left">
+  					<p style="color: white;font-size: 12px;float:left;margin-left: 3px">常见问题</p>
+  				</div>
+  				<br>
+  				<br>
+  				<br>
+  				<br>
+  				<a href="" style="text-decoration: none;font-size: 11px;color: red;padding-left: 250px">洗发护发</a>
+  				<a href="" style="text-decoration: none;font-size: 15px;color: #ebe7e7;">|</a>
+  				<a href="" style="text-decoration: none;font-size: 11px;color: red;">日本纸尿裤</a>
+  				<a href="" style="text-decoration: none;font-size: 15px;color: #ebe7e7;">|</a>
+  				<a href="" style="text-decoration: none;font-size: 11px;color: #666560;">身体乳</a>
+  				<a href="" style="text-decoration: none;font-size: 15px;color: #ebe7e7;">|</a>
+  				<a href="" style="text-decoration: none;font-size: 11px;color: #666560;">内衣文胸</a>
+  				<a href="" style="text-decoration: none;font-size: 15px;color: #ebe7e7;">|</a>
+  				<a href="" style="text-decoration: none;font-size: 11px;color: #c0a9d6;">iPone6s</a>
+  				<a href="" style="text-decoration: none;font-size: 15px;color: #ebe7e7;">|</a>
+  				<a href="" style="text-decoration: none;font-size: 11px;color: #c0a9d6;">iPad Air2</a>
+  				<a href="" style="text-decoration: none;font-size: 15px;color: #ebe7e7;">|</a>
+  				<a href="" style="text-decoration: none;font-size: 11px;color: #666560;">牛仔裤</a>
+  				<a href="" style="text-decoration: none;font-size: 15px;color: #ebe7e7;">|</a>
+  				<a href="" style="text-decoration: none;font-size: 11px;color: #666560;">奶粉</a>
+  				<a href="" style="text-decoration: none;font-size: 15px;color: #ebe7e7;">|</a>
+  				<a href="" style="text-decoration: none;font-size: 11px;color: #666560;">防晒霜</a>
+  				<a href="" style="text-decoration: none;font-size: 15px;color: #ebe7e7;">|</a>
+  				<a href="" style="text-decoration: none;font-size: 11px;color: #666560;">伞</a>
+  				
+
+  				
+  			</div>
+  			</div>
+  			</div>
+  			<div class="hov">
+  				<div class="hou" style="width: 170px;background-color: #ff0000;">
+  					<li style="padding-top: 10px;list-style-type: none"><a href="" class="aaa" style="color: white">全部商品分类</a></li>
+  				</div>
+  				<div class="hou" style="width: 130px">
+  					<li style="padding-top: 10px;list-style-type: none"><a href="" class="aaa">帮5赚</a></li>
+  				</div>
+  				<div class="hou" style="width: 78px">
+  					<li style="padding-top: 10px;list-style-type: none"><a href="" class="aaa">帮韩品</a></li>
+  				</div>
+  				<div class="hou" style="width: 128px">
+  					<li style="padding-top: 10px;list-style-type: none"><a href="" class="aaa">超划算</a></li>
+  				</div>
+  				<div class="hou" style="width: 96px">
+  					<li style="padding-top: 10px;list-style-type: none"><a href="" class="aaa">品牌货栈</a></li>
+  				</div>
+  				<div class="hou" style="width: 127px">
+  					<li style="padding-top: 10px;list-style-type: none"><a href="" class="aaa">韩国馆</a></li>
+  				</div>
+  				<div class="hou" style="width: 98px">
+  					<li style="padding-top: 10px;list-style-type: none"><a href="" class="aaa">帮社区</a></li>
+  				</div>
+  				<div class="hou" style="width: 137px">
+  					<li style="padding-top: 10px;list-style-type: none"><a href="" class="aaa">1元兑奖<img src="./img/hot.gif" alt=""></a></li>
+  				</div>
+
+  			</div>
+  			
+  		</div>
+  		<div class="xiam">
+  			<div class="pang">
+  				<div class="pang2">
+  					<div class="pang3">
+  						<br>
+  						<a style="font-size: 16px;color: #ff4d04;padding-left: 4px;">当</a>
+  						<a style="font-size: 16px;color: #ff4d04;padding-left: 4px;">前</a>
+  						<a style="font-size: 16px;color: #ff4d04;padding-left: 4px;">搜</a>
+  						<a style="font-size: 16px;color: #ff4d04;padding-left: 4px;">索</a>
+  						<a style="font-size: 16px;color: #ff4d04;padding-left: 4px;">电</a>
+  						<a style="font-size: 16px;color: #ff4d04;padding-left: 4px;">商</a>
+  						<br>
+  						<br>
+  						<a style="font-size: 16px;color: #ff4d04;padding-left: 4px;">全</a>
+  						<a style="font-size: 16px;color: #ff4d04;padding-left: 4px;">网</a>
+  					</div>
+  					<div class="pang4">
+  						<a href="" class="pang6">手机</a>
+  						<a href="" class="pang5">数码</a>
+  						<a href="" class="pang5">影音</a>
+  						<a href="" class="pang5">配件</a>
+  						<a href="" class="pang6">电脑</a>
+  						<a href="" class="pang5">网络</a>
+  						<a href="" class="pang5">办公</a>
+  						<a href="" class="pang5">打印</a>
+  						<a href="" class="pang6">家电</a>
+  						<a href="" class="pang5">厨卫</a>
+  						<a href="" class="pang5">生活</a>
+  						<a href="" class="pang5">个户</a>
+  						<a href="" class="pang6">园艺</a>
+  						<a href="" class="pang5">家具</a>
+  						<a href="" class="pang5">家纺</a>
+  						<a href="" class="pang5">家饰</a>
+  						<a href="" class="pang6">彩妆</a>
+  						<a href="" class="pang5">面部</a>
+  						<a href="" class="pang5">身体</a>
+  						<a href="" class="pang5">香水</a>
+  						<a href="" class="pang6">男装</a>
+  						<a href="" class="pang5">女装</a>
+  						<a href="" class="pang5">内衣</a>
+  						<a href="" class="pang5">其他</a>
+  						<a href="" class="pang6">女包</a>
+  						<a href="" class="pang5">男包</a>
+  						<a href="" class="pang5">女鞋</a>
+  						<a href="" class="pang5">男鞋</a>
+  						<a href="" class="pang6">运动</a>
+  						<a href="" class="pang5">户外</a>
+  						<a href="" class="pang5">装备</a>
+  						<a href="" class="pang5">服饰</a>
+  						<a href="" class="pang6">儿童</a>
+  						<a href="" class="pang5">婴儿</a>
+  						<a href="" class="pang5">食品</a>
+  						<a href="" class="pang5">玩具</a>
+  						<a href="" class="pang5">乐器</a>
+  						<a href="" class="pang5">家宠</a>
+  						<a href="" class="pang5">收藏</a>
+  						<a href="" class="pang5">鲜花</a>
+  						<a href="" class="pang6">保健</a>
+  						<a href="" class="pang5">理疗</a>
+  						<a href="" class="pang5">药品</a>
+  						<a href="" class="pang5">眼镜</a>
+  						<a href="" class="pang6">果蔬</a>
+  						<a href="" class="pang5">礼品</a>
+  						<a href="" class="pang5">粮油</a>
+  						<a href="" class="pang5">特产</a>
+  						<a href="" class="pang6">文艺</a>
+  						<a href="" class="pang5">生活</a>
+  						<a href="" class="pang5">科技</a>
+  						<a href="" class="pang5">教育</a>
+
+
+  					</div>
+  				</div>
+  				<img src="./img/dd_03.jpg" alt="" style="padding-top:10px;padding-left: 8px;"><span><a href="" style="padding-top: 0px;padding-left: 10px;font-size: 12px;text-decoration: none;color: #a75c38">什么是帮5购</a></span>
+  				
+  				<br>
+  				<img src="./img/dd_06.jpg" alt="" style="padding-top:18px;padding-left: 8px;"><span><a href="" style="padding-top: 0px;padding-left: 10px;font-size: 12px;text-decoration: none;color: #a75c38">帮5购提供什么服务</a></span>
+  				<br>
+  				
+  				<img src="./img/dd_08.jpg" alt="" style="padding-top:18px;padding-left: 8px;"><span><a href="" style="padding-top: 0px;padding-left: 10px;font-size: 12px;text-decoration: none;color: #a75c38">如何开通帮5购服务</a></span>
+
+  			</div>
+  			<div class="lun">
+  				<div class="box" id="box">
+  					<div class="slider" id="slider" style="left: -4800px;">
+  						<div class="slide"><img src="./img/bann6.png" alt=""></div>
+  						<div class="slide"><img src="./img/bann1.jpeg" alt=""></div>
+  						<div class="slide"><img src="./img/bann2.jpeg" alt=""></div>
+  						<div class="slide"><img src="./img/bann3.jpeg" alt=""></div>
+  						<div class="slide"><img src="./img/bann4.jpeg" alt=""></div>
+  						<div class="slide"><img src="./img/bann5.jpeg" alt=""></div>
+  						<div class="slide"><img src="./img/bann6.png" alt=""></div>
+  						<div class="slide"><img src="./img/bann1.jpeg" alt=""></div>
+  					</div>
+  					<span id="left" style="opacity: 0;">&lt;</span>
+  					<span id="right" style="opacity: 0;">&gt;</span>
+					<ul class="nav" id="nav">
+						<li class="" style="text-align: center;">1</li>
+						<li style="text-align: center;" class="">2</li>
+						<li style="text-align: center;" class="">3</li>
+						<li style="text-align: center;" class="">4</li>
+						<li style="text-align: center;" class="">5</li>
+						<li style="text-align: center;" class="active">6</li>
+					</ul>
+  				</div>
+  				<div class="tup">
+  					<img src="./img/1(1).jpg" alt="">
+  				</div>
+  				<div class="tup"><img src="./img/2.jpg" alt=""></div>
+  				<div class="tup"><img src="./img/3(1).png" alt=""></div>
+  				<div class="tup"><a href="shangpin.html"><img src="./img/qqq.png" alt=""></a></div>
+  				
+  			</div>
+  			<div class="gundong">
+  				<div class="kuai">
+  					<img src="./img/ico-notice.png" alt="" style="padding-top: 15px;padding-left: 22px">
+  					<span style="color: #fe6c00;font-size: 12px">帮帮快讯<span style="padding-left: 75px">&gt;&gt;</span></span>
+  				</div>
+  				<div class="nana" id="honor8">
+  					<ul id="con1" style="line-height: 30px;list-style: none;margin-top: 0px;margin-bottom: 0px;margin-left:-22px">
+						<li><a href="" style="font-size: 12px;text-decoration: none;color: 	#ff4d04;font-weight:bolder;">[公告] 帮购及VIP服务调整1</a></li>
+    					<li><a href="" style="font-size: 12px;text-decoration: none;color: 	#ff4d04;font-weight:bolder">[公告] 帮购及VIP服务调整2</a></li>
+    					<li><a href="" style="font-size: 12px;text-decoration: none;color: 	#ff4d04;font-weight:bolder">[公告] 帮购及VIP服务调整3</a></li>
+    					<li><a href="" style="font-size: 12px;text-decoration: none;color: 	#ff4d04;font-weight:bolder">[公告] 帮购及VIP服务调整4</a></li>
+    					<li><a href="" style="font-size: 12px;text-decoration: none;color: 	#ff4d04;font-weight:bolder">[公告] 帮购及VIP服务调整5</a></li>
+    					<li><a href="" style="font-size: 12px;text-decoration: none;color: 	#ff4d04;font-weight:bolder">[公告] 帮购及VIP服务调整6</a></li>
+    					<li><a href="" style="font-size: 12px;text-decoration: none;color: 	#ff4d04;font-weight:bolder">[公告] 帮购及VIP服务调整7</a></li>
+    					<li><a href="" style="font-size: 12px;text-decoration: none;color: 	#ff4d04;font-weight:bolder">[公告] 帮购及VIP服务调整8</a></li>
+   						<li><a href="" style="font-size: 12px;text-decoration: none;color: 	#ff4d04;font-weight:bolder">[公告] 帮购及VIP服务调整9</a></li>
+   						<li><a href="" style="font-size: 12px;text-decoration: none;color: 	#ff4d04;font-weight:bolder">[公告] 帮购及VIP服务调整10</a></li>
+   						<li><a href="" style="font-size: 12px;text-decoration: none;color: 	#ff4d04;font-weight:bolder">[公告] 帮购及VIP服务调整11</a></li>
+  					</ul>
+
+  				
+  					<ul id="con1" style="line-height: 30px;list-style: none;margin-top: 0px;margin-bottom: 0px;margin-left:-22px">
+						<li><a href="" style="font-size: 12px;text-decoration: none;color: 	#ff4d04;font-weight:bolder;">[公告] 帮购及VIP服务调整1</a></li>
+    					<li><a href="" style="font-size: 12px;text-decoration: none;color: 	#ff4d04;font-weight:bolder">[公告] 帮购及VIP服务调整2</a></li>
+    					<li><a href="" style="font-size: 12px;text-decoration: none;color: 	#ff4d04;font-weight:bolder">[公告] 帮购及VIP服务调整3</a></li>
+    					<li><a href="" style="font-size: 12px;text-decoration: none;color: 	#ff4d04;font-weight:bolder">[公告] 帮购及VIP服务调整4</a></li>
+    					<li><a href="" style="font-size: 12px;text-decoration: none;color: 	#ff4d04;font-weight:bolder">[公告] 帮购及VIP服务调整5</a></li>
+    					<li><a href="" style="font-size: 12px;text-decoration: none;color: 	#ff4d04;font-weight:bolder">[公告] 帮购及VIP服务调整6</a></li>
+    					<li><a href="" style="font-size: 12px;text-decoration: none;color: 	#ff4d04;font-weight:bolder">[公告] 帮购及VIP服务调整7</a></li>
+    					<li><a href="" style="font-size: 12px;text-decoration: none;color: 	#ff4d04;font-weight:bolder">[公告] 帮购及VIP服务调整8</a></li>
+   						<li><a href="" style="font-size: 12px;text-decoration: none;color: 	#ff4d04;font-weight:bolder">[公告] 帮购及VIP服务调整9</a></li>
+   						<li><a href="" style="font-size: 12px;text-decoration: none;color: 	#ff4d04;font-weight:bolder">[公告] 帮购及VIP服务调整10</a></li>
+   						<li><a href="" style="font-size: 12px;text-decoration: none;color: 	#ff4d04;font-weight:bolder">[公告] 帮购及VIP服务调整11</a></li>
+  					</ul>
+
+  				</div>
+  				<div class="ooo">
+  					<img src="./img/tp-my-phone.png" alt="" style="padding-left: 16px;float:left;padding-top: 7px;">
+  				<span style="font-size: 12px;padding-left:17px;padding-top: 2px;">话费充值</span>
+  				<span style="font-size: 12px;color: #ff4d04;padding-left: 9px;">(可使用超级帮钻)</span>
+  				<input type="text" value="请输入手机号" style="width:124px;height:24px;border:1px solid #aca7a2;color: #aca7a2;margin-left: 16px;margin-top: 12px">
+  				<br>
+  				<select name="" id="" style="width:60px;height:18px;border:1px solid #aca7a2;margin-top:4px;margin-left: 16px;float:left" onchange="fv(this.options[this.options.selectedIndex].value)">
+  					<option value="¥10">10</option>
+  					<option value="¥30">30</option>
+  					<option value="¥50">50</option>
+  					<option value="¥100">100</option>
+  				</select>
+  				<span id="tg" style="color: #ff4d04;font-size: 13px;margin-top: 10px;margin-left: 8px">¥30</span>
+  				<button style="width:178px;height: 25px;background-color:#ff4d04;color: white;border:0px solid #ff4d04;border-radius: 4px;margin-top: 7px;margin-left: 16px" value="充值">充值</button>
+  				</div>
+
+
+  			</div>
+  			<div class="dibu">
+  				<div class="dibuzuo">
+  					<img src="./img/loginB.jpg" alt="" class="logoin">
+  				</div>
+  				<div class="liebiao">
+  					<ul class="w1">
+  						<li class="plo3"><a href="">购物指南</a></li>
+  						<li class="plo2"><a href="">如何下单</a></li>
+  						<li class="plo2"><a href="">帮5购流程</a></li>
+  						<li class="plo2"><a href="">订单查询</a></li>
+  						<li class="plo2"><a href="">物流配送</a></li>
+					</ul>
+					<ul class="w2">
+						<li class="plo3"><a href="">支付相关</a></li>
+						<li class="plo2"><a href="">支付方式</a></li>
+						<li class="plo2"><a href="">安全设置</a></li>
+						<li class="plo2"><a href="">账户信息</a></li>
+					</ul>
+					<ul class="w3">
+						<li class="plo3"><a href="">售后服务</a></li>
+						<li class="plo2"><a href="">取消订单</a></li>
+						<li class="plo2"><a href="">申请售后</a></li>
+						<li class="plo2"><a href="">退货流程</a></li>
+						<li class="plo2"><a href="">退款相关</a></li>
+					</ul>
+					<ul class="w4">
+						<li class="plo3"><a href="">VIP服务</a></li>
+						<li class="plo2"><a href="">VIP优惠</a></li>
+						<li class="plo2"><a href="">如何成为VIP</a></li>
+						<li class="plo2"><a href="">超级帮钻</a></li>
+					</ul>
+					<ul class="w5">
+						<li class="plo3"><a href="">帮韩品</a></li>
+						<li class="plo2"><a href="">/a&gt;韩国正品</a></li><a href="">
+						</a><li class="plo2"><a href=""></a><a href="">闪电发货</a></li>
+						<li class="plo2"><a href="">帮韩品售后</a></li>
+					</ul>
+					<ul class="w6">
+						<li class="plo3"><a href="">更多</a></li><a href="">
+						</a><li class="plo2"><a href=""></a><a href="">手机APP</a></li>
+						<li class="plo2"><a href="">帮5采app</a></li>
+						<li class="plo2"><a href="">帮5淘插件</a></li>
+						<li class="plo2"><a href="">其他</a></li>
+					</ul>
+  				</div>
+  				<div class="jij">
+  					<img src="./img/erweima.jpg" alt="">
+  				</div>
+  			</div>
+  			<div class="weibu">
+  				<div class="luow">
+  					<ul class="uuu">
+  						<li class="xia1"><a href="">关于帮5买</a></li>
+  						<li class="xia3">|</li>
+  						<li class="xia2"><a href="">联系我们</a></li>
+  						<li class="xia3">|</li>
+  						<li class="xia2"><a href="">合作商家</a></li>
+  						<li class="xia3">|</li>
+  						<li class="xia2"><a href="">友情链接</a></li>
+  						<li class="xia3">|</li>
+  						<li class="xia2"><a href="">加入我们</a></li>
+  						<li class="xia3">|</li>
+  						<li class="xia2"><a href="">移动应用</a></li>
+  						<li class="xia3">|</li>
+  						<li class="xia2"><a href="">热门</a></li>
+  						<li class="xia3">|</li>
+  						<li class="xia2"><a href="">广告联盟</a></li>
+  						<li class="xia3">|</li>
+  						<li class="xia2"><a href="">使用条款</a></li>
+  					</ul>
+  				</div>
+  				<div class="serio">
+  					<ul class="leu">
+  						<li>Copy@ 2011-2015 B5M.COM.All rights reserved. Powered B5Msoft Co.Ltd</li>
+						<li>增值电信业务经营许可证： 沪B2-20130065号|中华人民共和国互联网药品信息服务资格证书(沪) 非经营性-2013-0034沪卫(中医)网审【2015】 10032号 沪ICP备 11034776号-3|食品流通许可证：</li>
+						<li>SP3101151410301755</li>
+  					</ul>
+  				</div>
+  				<div class="pioc">
+  					<img src="./img/bo1.gif" alt="" class="q1">
+  					<img src="./img/bo2.png" alt="" class="q2">
+  					<img src="./img/bo3.gif" alt="" class="q2">
+  					<img src="./img/bo4.png" alt="" class="q2">
+  					<img src="./img/bo5.png" alt="" class="q2">
+  					<img src="./img/bo6.png" alt="" class="q2">
+  					<img src="./img/bo7.png" alt="" class="q2">
+  				</div>
+  			</div>
+  		</div>
+
+  		</div>
+  		<div class="float1" id="float1" style="right: -83px; top: 82px; opacity: 1;">
+      		<img src="./img/consult-s.png" class="sy1">
+     		<img src="./img/xiaobang.png" class="sy2">
+   		</div>
+    	<div class="float2" id="float2" style="right: -83px; top: 191px; opacity: 1;">
+      		<img src="./img/youhui.png" class="sy3">
+      		<div class="float21">
+        		<p class="float211">未登录</p>
+        		<p class="float212">登录</p>
+      		</div>
+    	</div>
+    	<div class="float3" id="float3" style="right: -83px; top: 336px; opacity: 1;">
+      		<img src="./img/app.png" class="float3t1">
+      		<div class="float31">
+      	  		<img src="./img/serwei.png" id="float31t" style="margin-top: 36px;">
+      		</div>
+    	</div>
+    	<div class="float4" id="float4">
+      		<img src="./img/cart.png">
+    	</div>
+
+
+  	
+  	 
+  <script>
+  	window.onload=function(){
+  		var cover=document.getElementById("www");
+  		window.onscroll=function(){
+  			var st=document.documentElement.scrollTop||document.body.scrollTop;
+  			if(st>170){
+  				cover.style.position="fixed";
+  			}else{
+  				cover.style.position='static';
+  			}
+
+  		}
+  	}
+  	
+  	var box = document.getElementById('box');
+		var oNavlist = document.getElementById('nav').children;
+		var slider = document.getElementById('slider');
+		var left = document.getElementById('left');
+		var right = document.getElementById('right');
+		var index = 1;
+		var timer;
+		var isMoving = false;
+		box.onmouseover = function(){
+			animate(left,{opacity:50})
+			animate(right,{opacity:50})
+			clearInterval(timer)
+		}
+		box.onmouseout = function(){
+			animate(left,{opacity:0})
+			animate(right,{opacity:0})
+			timer = setInterval(next, 3000);
+		}
+		right.onclick = next;
+		left.onclick = prev;
+		for( var i=0; i<oNavlist.length; i++ ){
+			oNavlist[i].index = i;
+			oNavlist[i].onclick = function(){
+				index = this.index+1;
+				navmove();
+				animate(slider,{left:-800*index});
+			}
+		}
+		function next(){
+			if(isMoving){
+				return;
+			}
+			isMoving = true;
+			index++;
+			navmove();
+			animate(slider,{left:-800*index},function(){
+				if(index==7){
+					slider.style.left = '-800px';
+					index = 1;
+				}
+				isMoving = false;
+			});
+		}
+		function prev(){
+			if(isMoving){
+				return;
+			}
+			isMoving = true;
+			index--;
+			navmove();
+			animate(slider,{left:-800*index},function(){
+				if(index==0){
+					slider.style.left = '-4800px';
+					index = 6;
+				}
+				isMoving = false;
+			});
+		}
+		function navmove(){
+			for( var i=0; i<oNavlist.length; i++ ){
+				oNavlist[i].className = "";
+			}
+			if(index >6 ){
+				oNavlist[0].className = "active";
+			}else if(index<=0){
+				oNavlist[5].className = "active";
+			}else {
+				oNavlist[index-1].className = "active";
+			}
+		}
+		timer = setInterval(next, 3000);
+		function getStyle(obj, attr){
+			if(obj.currentStyle){
+				return obj.currentStyle[attr];
+			} else {
+				return getComputedStyle(obj, null)[attr];
+			}
+		}
+		function animate(obj,json,callback){
+			clearInterval(obj.timer);
+			obj.timer = setInterval(function(){
+				var isStop = true;
+				for(var attr in json){
+					var now = 0;
+					if(attr == 'opacity'){
+						now = parseInt(getStyle(obj,attr)*100);
+					}else{
+						now = parseInt(getStyle(obj,attr));
+					}
+					var speed = (json[attr] - now) / 8;
+					speed = speed>0?Math.ceil(speed):Math.floor(speed);
+					var cur = now + speed;
+					if(attr == 'opacity'){
+						obj.style[attr] = cur / 100;
+					}else{
+						obj.style[attr] = cur + 'px';
+					}
+					if(json[attr] !== cur){
+						isStop = false;
+					}
+				}
+				if(isStop){
+					clearInterval(obj.timer);
+					callback&&callback();
+				}
+			}, 30)
+
+		}
+		 var area=document.getElementById("honor8");
+		 var con=document.getElementById("con1");
+		area.innerHTML+=area.innerHTML;
+		var liHeight=24;
+		area.scrollTop=0;
+		var speed=20;
+		var time;
+		function starMove(){
+ 			area.scrollTop++;
+ 			time=setInterval("scrollUp()",speed);
+		}
+		function scrollUp(){
+  			if(area.scrollTop%liHeight==0){
+  				clearInterval(time);
+  				setTimeout("starMove()",0);
+  			}else{
+  				area.scrollTop++;
+  				if(area.scrollTop>=area.offsetHeight*1.06){
+  					area.scrollTop=0;
+  				}
+  			}
+		}
+		scrollUp();
+		area.onmouseover=function(){
+			clearInterval(time);
+			if(area.scrollTop++&&document.documentElement.clientWidth>=1903){
+				area.scrollTop--;
+				area.scrollTop--;
+
+			}
+			else{
+				area.scrollTop--;
+			}
+
+		}
+		area.onmouseout=function(){
+			starMove();
+		}
+		function fv(that){
+			var io=document.getElementById("tg");
+			io.innerHTML=that;
+		}
+		var float1 = document.getElementById('float1');
+		float1.onmouseover = function(){
+    		animate(float1,{right:0,top:82,opacity:100});
+		}
+		float1.onmouseout = function(){
+    		animate(float1,{right:-83,top:82,opacity:100});
+		}
+		var float2 = document.getElementById('float2');
+		float2.onmouseover = function(){
+    		animate(float2,{right:0,top:191,opacity:100});
+		}
+		float2.onmouseout = function(){
+    		animate(float2,{right:-83,top:191,opacity:100});
+		}
+		var float3 = document.getElementById('float3');
+		var float31t = document.getElementById('float31t');
+		float3.onmouseover = function(){
+    		animate(float3,{right:0,top:336,opacity:100});
+    		float31t.src = "./img/erwei.png";
+    		float31t.style.marginTop = "3px";
+		}
+		float3.onmouseout = function(){
+    		animate(float3,{right:-83,top:336,opacity:100});
+    		float31t.src = "./img/serwei.png";
+    		float31t.style.marginTop = "36px";
+		}
+		var float4 = document.getElementById('float4');
+		float4.onmouseover = function(){
+    		animate(float4,{right:0,top:491,opacity:100});
+		}
+		float4.onmouseout = function(){
+    		animate(float4,{right:-83,top:491,opacity:100});
+		}     
+	</script>
+
+</body>
+</html>
