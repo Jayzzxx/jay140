@@ -328,9 +328,9 @@
   /* ---------- letter ---------- */
   .letter-grid{
     display:grid;
-    grid-template-columns:minmax(0,1.06fr) minmax(0,.94fr);
-    gap:clamp(30px,5vw,68px);
-    align-items:center;
+    grid-template-columns:1fr;
+    max-width:880px;
+    margin:0 auto;
   }
   .letter-card{
     position:relative;
@@ -383,51 +383,6 @@
     width:34px;height:1px;margin-right:12px;
     background:linear-gradient(90deg,transparent,rgba(255,201,220,.7));
   }
-
-  .photo-wrap{
-    position:relative;justify-self:center;width:100%;max-width:430px;
-  }
-  .photo-wrap::before{
-    content:"";position:absolute;inset:-12%;z-index:-1;
-    background:radial-gradient(circle at 50% 45%,rgba(255,46,109,.4),transparent 66%);
-    filter:blur(46px);pointer-events:none;
-  }
-  .photo{
-    margin:0;padding:12px 12px 58px;
-    border-radius:22px;
-    background:linear-gradient(165deg,rgba(255,255,255,.14),rgba(255,255,255,.05));
-    border:1px solid rgba(255,255,255,.18);
-    box-shadow:0 44px 90px -38px rgba(255,46,109,.72),0 10px 40px rgba(0,0,0,.5);
-    transform:rotate(-3deg);
-    transition:transform .8s cubic-bezier(.16,.84,.44,1),box-shadow .8s ease;
-    will-change:transform;
-  }
-  .photo img{
-    display:block;width:100%;height:auto;border-radius:14px;
-    filter:saturate(1.02) contrast(1.02);
-  }
-  .photo figcaption{
-    position:absolute;left:0;right:0;bottom:17px;
-    text-align:center;
-    font-family:var(--display);font-style:italic;
-    font-size:.92rem;letter-spacing:.22em;
-    color:rgba(255,246,248,.78);
-  }
-  .photo-wrap:hover .photo{
-    transform:rotate(0deg) translateY(-8px) scale(1.015);
-    box-shadow:0 54px 110px -34px rgba(255,46,109,.85),0 14px 46px rgba(0,0,0,.55);
-  }
-  .photo-tag{
-    position:absolute;right:-6px;top:-14px;z-index:2;
-    padding:6px 16px;border-radius:999px;
-    font-size:.58rem;letter-spacing:.32em;
-    color:rgba(255,244,247,.72);
-    background:rgba(20,8,22,.7);
-    border:1px solid rgba(255,255,255,.14);
-    backdrop-filter:blur(10px);-webkit-backdrop-filter:blur(10px);
-    animation:floatTag 5s ease-in-out infinite;
-  }
-  @keyframes floatTag{50%{transform:translateY(-7px) rotate(1.5deg)}}
 
   /* ---------- finale ---------- */
   .finale{
@@ -548,8 +503,7 @@
 
   /* ---------- responsive ---------- */
   @media (max-width:900px){
-    .letter-grid{grid-template-columns:1fr;gap:44px}
-    .photo-wrap{max-width:390px;order:-1}
+    .letter-grid{grid-template-columns:1fr}
     .topbar-date{font-size:.54rem;letter-spacing:.24em}
   }
   @media (max-width:560px){
@@ -583,7 +537,7 @@
 
   @media (prefers-reduced-motion:reduce){
     html{scroll-behavior:auto}
-    .aurora .blob,.title,.cta::after,.photo-tag,.scroll-cue span,.brand .heart,.counter-label .beat-heart,.finale h2{animation:none!important}
+    .aurora .blob,.title,.cta::after,.scroll-cue span,.brand .heart,.counter-label .beat-heart,.finale h2{animation:none!important}
     .reveal,.line{opacity:1!important;transform:none!important;transition:none!important}
     .music .eq i{animation:none!important}
     *{scroll-behavior:auto!important}
@@ -680,14 +634,6 @@
         <p class="line hush" style="--i:10">happy happy jayz 祝你生日快乐</p>
         <p class="sign" style="--i:11">--jay</p>
       </article>
-
-      <div class="photo-wrap reveal">
-        <span class="photo-tag">2018 · US</span>
-        <figure class="photo">
-          <img src="bbg.JPG" alt="我们的合照" loading="lazy" decoding="async">
-          <figcaption>我们 · the two of us</figcaption>
-        </figure>
-      </div>
     </div>
   </section>
 
