@@ -775,7 +775,7 @@
       <canvas id="gardenCanvas" aria-label="点击画面，为她种下一朵花"></canvas>
       <p class="garden-hint">点一点，为她种下一朵花</p>
       <button class="cta magnetic" id="bloomBtn" type="button">
-        <span class="spark">✿</span> 送她一束花
+        <span class="spark">✿</span> 为我们的爱喝彩
       </button>
     </div>
   </section>
@@ -1177,12 +1177,12 @@
 
   function addFlower(fx, bloomY, delay = 0) {
     if (!GH) return;
-    if (flowers.length >= 30) flowers.shift();
+    if (flowers.length >= 64) flowers.shift();
     flowers.push({
       fx: clamp(fx, 0.06, 0.94),
       h: clamp((GH - bloomY) / GH, 0.22, 0.9),
       bend: rand(-18, 18),
-      size: rand(11, 19),
+      size: rand(12, 21),
       tint: FLOWER_TINTS[(Math.random() * FLOWER_TINTS.length) | 0],
       phase: rand(0, Math.PI * 2),
       t0: performance.now() + delay,
@@ -1289,9 +1289,11 @@
         gardenVisible = entry.isIntersecting;
         if (entry.isIntersecting && !gardenSeeded) {
           gardenSeeded = true;
-          addFlower(0.26, GH * 0.57, 0);
-          addFlower(0.5, GH * 0.43, 220);
-          addFlower(0.74, GH * 0.62, 440);
+          addFlower(0.16, GH * 0.62, 0);
+          addFlower(0.32, GH * 0.5, 160);
+          addFlower(0.5, GH * 0.4, 320);
+          addFlower(0.68, GH * 0.52, 480);
+          addFlower(0.84, GH * 0.64, 640);
         }
       });
     }, { threshold: 0.15 });
@@ -1302,17 +1304,19 @@
 
   $('#bloomBtn').addEventListener('click', (e) => {
     e.stopPropagation();
-    const n = 7;
+    const n = 18;
+    const half = (n - 1) / 2;
     for (let i = 0; i < n; i++) {
-      const offset = i - (n - 1) / 2;
+      const offset = i - half;
+      const spread = Math.abs(offset) / half;
       addFlower(
-        0.5 + offset * 0.075 + rand(-0.015, 0.015),
-        GH * (0.34 + Math.abs(offset) * 0.055 + rand(-0.03, 0.03)),
-        i * 90
+        0.5 + offset * 0.034 + rand(-0.012, 0.012),
+        GH * (0.3 + spread * 0.26 + rand(-0.045, 0.045)),
+        i * 55
       );
     }
     const r = e.currentTarget.getBoundingClientRect();
-    burstPetals(r.left + r.width / 2, r.top, 16, 1.3);
+    burstPetals(r.left + r.width / 2, r.top, 22, 1.3);
   });
 
   resizeGarden();
